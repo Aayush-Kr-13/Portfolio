@@ -1,0 +1,21 @@
+.solid-logo{
+    position: absolute;
+    height: 500px;
+    width: auto;
+    right: 100px;
+    top: 100px;
+    opacity: 0.8;
+    border-radius: 50%;
+    &.flip-horizontal {
+        animation: flipHorizontal 3s infinite;
+    }
+}
+
+@keyframes flipHorizontal {
+    0%, 100% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(-1);
+    }
+}
